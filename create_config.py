@@ -5,8 +5,8 @@ FB = 'facebook'
 
 
 def does_config_exist():
-    exist_account_conf = os.path.isfile('./conf.ini')
-    if exist_account_conf is True:
+    exist_conf = os.path.isfile('./conf.ini')
+    if exist_conf is True:
         print("Ini Found: True")
     else:
         print("Ini Found: False.. Generating")
