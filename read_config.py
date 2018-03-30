@@ -30,9 +30,15 @@ try:
     em_pa = config[EM]['pass']
     em_rec = config[EM]['recipients']
 
-    tw_rec = tw_rec.split(', ')
-    fb_rec = fb_rec.split(', ')
-    em_rec = em_rec.split(', ')
-
 except Exception as e:
     print(e)
+
+if tw_rec != '':
+    tw_rec = tw_rec.split(', ')
+if fb_rec != '':
+    fb_rec = fb_rec.split(', ')
+if em_rec != '':
+    em_rec = em_rec.split(', ')
+
+
+print(em_rec)
